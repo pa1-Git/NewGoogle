@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.einfochips.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="tester" value="sai"/>
+    <parameter name="env" value="qa"/>
+    <classes>
+      <class name="com.einfochips.testCases.HomepageTest">
+        <methods>
+          <include name="Services"/>
+          <include name="setup"/>
+          <include name="launch"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.einfochips.testCases.HomepageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
